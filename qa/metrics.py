@@ -10,7 +10,7 @@ def flagfrac(msfile):
     """
 
     if not os.path.exists(msfile):
-        logger.warn('File {0} not found'.format(msfile))
+        print('File {0} not found'.format(msfile))
         return None
 
     tb.open(msfile, nomodify=True)
@@ -27,7 +27,7 @@ def flagfrac_chans(msfile):
     """
 
     if not os.path.exists(msfile):
-        logger.warn('File {0} not found'.format(msfile))
+        print('File {0} not found'.format(msfile))
         return None
 
     tb.open(msfile, nomodify=True)
